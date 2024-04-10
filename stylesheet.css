@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+
+    html { 
+        box-sizing: border-box;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+    body{ background-color: #18281f;
+        max-width: 1200px;
+        margin: 0 auto;
+  
+        
+      }
+    #container{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-flow: row;
+        }
+    
+    .hero_image {
+        background-image: url(images/bug2.jpg);
+        height: 500px; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        max-width: 100%;
+        /*ADUSTMENTS*/
+        padding: 4rem 2rem;
+        align-items: center;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    
+    .hero_header {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    font-size: 3em;
+    margin: 20px;
+    }
+
+    .hero_image2 {
+        background-image: url(images/butterfly.jpg);
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        max-width: 100%;}
+
+    .hero_image3 {
+        background-image: url(images/swan.jpg);
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        max-width: 100%;}
+    
+
+
+    .hero_image4{
+        background-image: url(images/flower.jpg);
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        max-width: 100%;}
+
+
+
+    #grid{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 25px;
+        justify-items: center;
+        grid-template-areas:
+        'portfolio portfolio portfolio'
+        'moss heron tree'
+        'flower frog ibis'
+        'cactus knot swan'
+        'bug2 butterfly bug'
+        }
+    .grid{
+     display:grid;
+     grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+     grid-template-rows:1fr 1fr ;
+     gap: 15px;
+     justify-items: center;
+}
+    #grid2{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        justify-items: center;
+        grid-template-areas:
+         'wagner wagner wagner'
+         'portrait statement table'
+         'ArtistBio ArtistBio ArtistBio'
+         'nature knot moss2';
+         align-items: center;
+    }
+    #grid3{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto 1fr 1fr;
+        gap: 15;  
+        align-items: center;
+        justify-items: auto;
+        grid-template-areas:
+        'welcome welcome welcome'
+        'blueheron blueheron blueheron'
+        'bug3 butterfly bug4';
+    }
+
+    .bug3{
+            grid-area: bug3
+        }
+    .bug4{
+        grid-area: bug4
+    }
+    .blueheron{
+        position: relative;
+        display: inline-block;
+        justify-content: center;
+        padding-right: 15em ;
+        
+    }   
+    .blueheron{
+        display: grid;
+        width: 100x;;
+        height: auto;
+
+    }
+    .page{ 
+        position: absolute;
+        top: 78%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        padding: 20px 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .grid4{display:grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas:
+        'contact contact contact'
+        'swan2 swan2 swan2'
+        'you you you'
+        'info2 info2 info2'
+        'footer footer footer'
+        'social twitter face';
+        }
+
+.swan2{ grid-area: swan2;
+}
+.info2{ grid-area: info2;
+}
+.contact{ grid-area: contact;
+}
+.you{ grid-area: you;
+    color: white;
+}
+.social{ grid-area: social;
+}
+.footer{ grid-area: footer;
+        color: white;
+}
+.twitter{ grid-area: twitter ;
+} 
+.face{ grid-area: face;
+}
+  
+ .bug2{
+    grid-area: bug2 ;
+    color: white;
+    font-size: .5em;
+ }       
+        
+.bug{
+    grid-area: bug;
+    color: white;
+    font-size: .5em;
+}
+ 
+  
+.welcome{
+    grid-area: welcome;
+    padding-left: 13em;
+    
+}
+.blueheron{
+    grid-area: blueheron;
+}
+
+.favbirds{font-size: 40px;
+
+}
+.portrait{
+    grid-area: portrait;
+    padding-top: 10em;
+    padding-right: 2em;
+    padding-bottom: 20em;
+    padding-left: 2em;
+}
+    
+.statement{ 
+    grid-area: statement;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    color: white;
+    font-size: .5em;
+}
+.ArtistBio {
+    grid-area: ArtistBio;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    color: white;
+    font-size: .5em;
+}
+.table {
+    grid-area: table;
+}
+.wagner{
+    grid-area: wagner;
+}
+
+.portfolio{
+    grid-area: portfolio;
+}
+.nature{
+    grid-area: nature;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+.knot{
+    grid-area: knot;
+    color: white;
+    font-size: .5em;
+    /*padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;*/
+}
+.moss2{
+    grid-area: moss2;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    color: white
+}
+ .moss{ 
+    grid-area: moss;
+    color: white;
+    font-size: .5em;
+
+}
+ .heron{
+    grid-area: heron;
+    color: white;
+    font-size: .5em;
+}
+.tree{
+   grid-area:tree;
+   color: white;
+   font-size: .5em;
+}
+.flower{
+    grid-area: flower;
+    color: white;
+    font-size: .5em;
+ }
+.frog{
+    grid-area: frog;
+    color: white;
+    font-size: .5em;
+ }
+
+.ibis{
+    grid-area:ibis;
+    color: white;
+    font-size: .5em;
+ }
+.cactus{
+    grid-area: cactus;
+    color: white;
+    font-size: .5em;
+
+}
+.swan{
+    grid-area: swan;
+    color: white;
+    font-size: .5em;
+   }
+.butterfly{
+    grid-area: butterfly;
+    color: white;
+    font-size: .5em;
+   }
+.bug{
+    grid-area:bug;
+    color: white;
+    font-size: .5em;
+
+}
+ 
+h1{ color: #6cffba;
+        text-shadow: .05em .05em #090909;
+        font-size: 4em;
+    }
+
+
+h2{font-family: Arial, Helvetica, sans-serif;
+        font-size: 3em;
+        text-shadow: .05em .05em rgb(11, 11, 11);
+        color: #6cffba;
+        margin: 0 auto;
+    }
+h1{ color: #6cffba;
+        font-size: 4em;
+        text-shadow: .05em .05em rgb(11, 11, 11);
+    }
+dt{ font-size: 3em; color:#6CFFBA;text-shadow: .05em .05em rgb(11, 11, 11);
+    }
+dd{ font-size: 3em;
+    }
+p{ font-size: 3em;
+    }
+    h1{color: #6cffba;
+        font-size: 4em; 
+        text-shadow: .05em .05em rgb(9, 9, 9);}
+        h2{color: #6CFFBA;
+        font-size:2.5em;
+        text-shadow: .05em .05em rgb(9, 9, 9);}
+        p { text-indent: 2em;}
+        td, th {border: 1px solid gray;}      
+
+
+   
+td, th {border: 1px solid gray;
+    }
+span{
+          float: left;
+          margin: 3em;
+          width: 200px;
+          padding: 1em;
+          background-color: #493314;
+    }
+.main_nav{  display:flex;
+            align-items: center;
+            list-style: none;
+            background-color:  #56d6ab;
+            padding: 4em;
+            margin: 0 ;
+            flex-direction: row;
+             }
+    
+.main_nav a{
+        color: #000000;
+        padding: 60px 40px;
+        text-decoration: none;
+        margin: 0;
+        }
+
+.main_nav a:hover{
+           background-color: white;
+           color: #6CFFBA;
+        }
+ li.logo{
+    margin-left: auto;
+ }
+            
+footer{
+    Background: #6CFFBA;
+    color: white;
+    text-align:center;
+    padding: 5px;
+    margin: 0px; 
+}
+@media screen and (max-width:860px){
+#grid3{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4,auto);
+    gap: 15;  
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    'welcome welcome'
+    'blueheron blueheron'
+    'bug3 butterfly'
+    'bug4 bug4';
+    }
+    #grid2{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(6, auto);
+        gap: 20px;
+        justify-items: center;
+        grid-template-areas:
+         'wagner wagner'
+         'portrait statement'
+         'table table'
+         'ArtistBio ArtistBio'
+         'nature knot'
+         'moss2 moss2';
+         align-items: center;
+   
+        } 
+        #grid{
+            display:grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repet(9, auto);
+            gap: 25px;
+            justify-items: center;
+            grid-template-areas:
+            'portfolio'
+            'moss heron'
+            'tree tree'
+            'flower frog' 
+            'ibis ibis'
+            'cactus knot' 
+            'swan swan'
+            'bug2 butterfly'
+            'bug  bug'
+            }
+}
+@media screen and (max-width:680px){
+    #grid3{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        gap: 15;  
+        align-items: center;
+        justify-items: auto;
+        grid-template-areas:
+        'welcome'
+        'blueheron'
+        'bug3'
+        'butterfly'
+        'bug4';
+    }  
+    #grid2{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+        gap: 20px;
+        justify-items: center;
+        grid-template-areas:
+         'wagner'
+         'portrait'
+         'statement'
+         'table'
+         'ArtistBio'
+         'nature'
+         'knot' 
+         'moss2';
+         align-items: center;
+  
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: repeat(13, auto);
+            gap: 25px;
+            justify-items: center;
+            grid-template-areas:
+            'portfolio'
+            'moss'
+            'heron' 
+            'tree'
+            'flower'
+            'frog'
+            'ibis'
+            'cactus'
+            'knot'
+            'swan'
+            'bug2'
+            'butterfly'
+            'bug';
+            }
+}
